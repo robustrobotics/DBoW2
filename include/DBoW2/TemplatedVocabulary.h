@@ -17,6 +17,7 @@
 #include <fstream>
 #include <string>
 #include <algorithm>
+#include <limits>
 #include <opencv2/core.hpp>
 
 #include "FeatureVector.h"
