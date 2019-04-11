@@ -56,6 +56,7 @@ namespace DBoW2
 #include "QueryResults.h"
 #include "FBrief.h"
 #include "FORB.h"
+#include "FSurf64.h"
 
 /// ORB Vocabulary
 typedef DBoW2::TemplatedVocabulary<DBoW2::FORB::TDescriptor, DBoW2::FORB> 
@@ -64,6 +65,14 @@ typedef DBoW2::TemplatedVocabulary<DBoW2::FORB::TDescriptor, DBoW2::FORB>
 /// FORB Database
 typedef DBoW2::TemplatedDatabase<DBoW2::FORB::TDescriptor, DBoW2::FORB> 
   OrbDatabase;
+
+/// SURF64 Vocabulary
+typedef DBoW2::TemplatedVocabulary<DBoW2::FSurf64::TDescriptor, DBoW2::FSurf64> 
+  Surf64Vocabulary;
+
+  /// SURF64 Database
+typedef DBoW2::TemplatedDatabase<DBoW2::FSurf64::TDescriptor, DBoW2::FSurf64> 
+  Surf64Database;
   
 /// BRIEF Vocabulary
 typedef DBoW2::TemplatedVocabulary<DBoW2::FBrief::TDescriptor, DBoW2::FBrief> 
